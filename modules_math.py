@@ -10,7 +10,6 @@ print(f"sine : {values[0]}")
 print(f"cosine : {values[1]}")
 print(f"tangent : {values[2]}")
 
-
 from math import sqrt
 
 def calculate_square_root(value):
@@ -31,3 +30,32 @@ def round_values(value):
 values = round_values(3.5)
 print(f'floor and ceil of 3.5 are : {values[0]}')
 print(f'floor and ceil of 3.5 are : {values[1]}')
+
+from math import factorial as fc
+
+values = int(input('enter a number to calculate its factorial:'))
+
+def calculate_factorial(value):
+   """""calculate the factorial of a given value."""
+   return fc(value)
+
+print(f'factorial of {values} is: {calculate_factorial(values)}')
+
+from math import log as lg
+
+value = int(input('enter a number to calculate its logarithm :'))
+base = int(input('enter  the base for logarithm :'))
+
+def calculate_logarithm(value, base):
+   """""calculate the logarithm of a given value with a specified base."""
+   return lg(value, base)
+
+print(f'logarithm of {value} with base {base} is: {calculate_logarithm(value, base)}')
+
+from math import pow as pw
+
+value = int(input('enter a number to calculate its power :'))
+
+def calculate_power(value, exponent):
+   """""calculate the power of a given value with a specified exponent"""""
+   return pw(value, exponent)
