@@ -59,9 +59,6 @@ durasi parkir : {durasi}
 kendaraan anda termasuk kategori : {kategori}
 """.title())
 
-# bayar = int(input(f"masukan biaya parkir : sebesar Rp.{biaya} : ".title()))
-
-
 while True :
     bayar = int(input(f"masukan biaya parkir : sebesar Rp.{biaya} : ".title()))
 
