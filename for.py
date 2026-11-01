@@ -47,3 +47,33 @@ for i in range(10):
     for k in range(i):
         print('*', end=' ')
     print()
+
+print("\n=== MOBIL DI BAWAH LANGIT BERBINTANG ===")
+for i in range(4):
+    for j in range(60):
+        if (i * 17 + j * 11) % 43 == 0:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+for i in range(10):
+    for j in range(60):
+        left_wheel = (j - 18) ** 2 + (i - 7) ** 2
+        right_wheel = (j - 43) ** 2 + (i - 7) ** 2
+        wheel = 4 < left_wheel <= 10 or 4 < right_wheel <= 10
+        inside_wheel = left_wheel <= 4 or right_wheel <= 4
+        car_body = (
+            (i == 0 and 25 <= j <= 34)
+            or (1 <= i <= 2 and (j == 25 - 3 * i or j == 34 + 3 * i or j == 29))
+            or (i == 3 and (16 <= j <= 43))
+            or (i == 4 and 12 <= j <= 47)
+            or (i == 5 and 9 <= j <= 50)
+            or (i == 6 and 7 <= j <= 52)
+            or (i == 7 and 9 <= j <= 50)
+        )
+        if wheel or (car_body and not inside_wheel):
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
