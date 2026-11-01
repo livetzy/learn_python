@@ -31,3 +31,11 @@ for n in range(2, 10):
         if n % x == 0:
             print(f"{n} equals {x} * {n//x}")
             break
+
+for i in range(10):
+    for j in range(i):
+        print(' ', end=' ')
+    print()
+    for k in range(10, i, -1):
+        print('*', end=' ')
+    print()
