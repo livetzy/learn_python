@@ -56,3 +56,11 @@ print('nama saya adalah : %s' % nama)
 def menu() :
     print("selamat datang di bioskop".capitalize())
     print("")
+
+nama = 'jabez chrisopras ferdinand'
+umur = 17
+
+status =  nama + umur 
+
+print(status)
+
